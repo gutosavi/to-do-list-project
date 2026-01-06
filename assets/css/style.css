@@ -63,17 +63,17 @@ section#container input{
     border-radius: 5px;
     color: #fff;
     font-weight: bolder;
-
+    transition: transform .2s ease;
 }
 
 #btn:hover{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, .2);
-    transform: translate(-3px);
+    transform: translateY(-3px);
     cursor: pointer;
 }
 
 .btn-apagar:hover{
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, .2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .3);
     transform: translate(-3px);
     cursor: pointer;
 }

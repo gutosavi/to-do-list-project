@@ -74,7 +74,6 @@ function adicionaTarefasSalvas(){
 
 adicionaTarefasSalvas();
 
-
 function toggleResults(){
     if (tarefas.children.length === 0){
         results.classList.remove('mostrar');
