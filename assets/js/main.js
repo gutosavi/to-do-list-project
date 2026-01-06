@@ -22,6 +22,7 @@ function criaTarefa(texto){
     tarefas.appendChild(li);
     limpar();
     criaBtnApagar(li);
+    salvarTarefas();
 };
 
 function criaLi(){
@@ -38,5 +39,28 @@ function criaBtnApagar(li){
     li.innerText += ' ';
     const btn = document.createElement('button');
     btn.innerText = 'apagar';
+    btn.classList.add('btn-apagar');
     li.appendChild(btn);
 };
+
+document.addEventListener('click', (e) => {
+    const el = e.target;
+    if (el.classList.contains('btn-apagar')){
+        el.parentElement.remove();
+        salvarTarefas();
+    }
+});
+
+function salvarTarefas(){
+    const lista = tarefas.querySelectorAll('li');
+    const listaDeTarefas = [];
+    
+    for (let item of lista){
+        let tarefaText = item.innerText.replace('apagar', '').trim();
+        listaDeTarefas.push(tarefaText);
+    }
+};
+
+
+
+
