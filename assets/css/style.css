@@ -82,6 +82,9 @@ ul#tarefas{
 }
 
 li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style: none;
     font-weight: bold;
     font-size: 1.1em;
