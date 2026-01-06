@@ -82,4 +82,14 @@ function toggleResults(){
     }
 };
 
+function tarefaCompleta(){
+    const tarefas = document.querySelectorAll('li');
+    for (let tarefa of tarefas){
+        tarefa.addEventListener('click', () => {
+            tarefa.classList.toggle('completed')
+        })
+    }
+};
+
+tarefaCompleta();
 
