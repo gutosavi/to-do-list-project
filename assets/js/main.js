@@ -21,6 +21,7 @@ function criaTarefa(texto){
     li.innerText = texto;
     tarefas.appendChild(li);
     limpar();
+    criaBtnApagar(li);
 };
 
 function criaLi(){
@@ -31,4 +32,11 @@ function criaLi(){
 function limpar(){
     inputTexto.value = '';
     inputTexto.focus();
+};
+
+function criaBtnApagar(li){
+    li.innerText += ' ';
+    const btn = document.createElement('button');
+    btn.innerText = 'apagar';
+    li.appendChild(btn);
 };
