@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, #6A3093, #A044FF);
+    
+}
+
+header{
+    margin: 100px auto;
+    justify-items: center;
+}
+
+header h1{
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 5px 5px 15px rgba(5, 5, 5, .9);
+}
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+section#container{
+    width: 400px;
+    height: 120px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+}
+
+section#container input{
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    padding: 6px;
+}
+
+#btn{
+    width: 70px;
+    height: 43px;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    background-color: #A044FF;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bolder;
+
+}
+
+section#results{
+    width: 400px;
+    min-height: 120px;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    padding: 20px;
+}
+
+ul#tarefas{
+    width: 400px;
+}
+
+li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    border-bottom-style: inset;    
+}
+
