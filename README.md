@@ -31,6 +31,7 @@ A aplicação permite adicionar e remover tarefas, mantendo os dados salvos mesm
 - Salvar tarefas automaticamente no navegador
 - Recarregar tarefas salvas ao abrir a página
 - Mostrar ou ocultar resultados conforme o estado da lista
+- Marcar tarefas como concluídas
 
 ---
 
@@ -72,7 +73,6 @@ Este projeto faz parte do processo de aprendizado em JavaScript, com foco em **l
 
 ## Próximos passos (ideias)
 
-- Marcar tarefas como concluídas
 - Editar tarefas
 - Melhorar acessibilidade
 - Refatorar para módulos
