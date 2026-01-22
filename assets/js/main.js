@@ -1,7 +1,7 @@
-const inputTexto = document.querySelector('#inTexto');
-const btn = document.querySelector('#btn');
-const tarefas = document.querySelector('#tarefas');
-const results = document.querySelector('#results');
+const inputTexto = document.getElementById('inTexto');
+const btn = document.getElementById('btn');
+const tarefas = document.getElementById('tarefas');
+const results = document.getElementById('results');
 
 function btnEnter(e){
     if (e.key === 'Enter' || e.type === 'click'){
@@ -25,6 +25,7 @@ function criaTarefa(texto){
     criaBtnApagar(li);
     salvarTarefas();
     toggleResults();
+    tarefaCompleta();
 };
 
 function limpar(){
@@ -34,7 +35,7 @@ function limpar(){
 
 function criaBtnApagar(li){
     li.innerText += ' ';
-    const btn = document.createElement('button');
+    // const btn = document.createElement('button');
     const btnIcon = document.createElement('i')
     btnIcon.classList.add('fa-solid', 'fa-trash-can');
     btnIcon.classList.add('btn-apagar');
@@ -84,14 +85,12 @@ function toggleResults(){
 
 function tarefaCompleta(){
     const tarefas = document.querySelectorAll('li');
-    for (let tarefa of tarefas){
-        tarefa.addEventListener('click', () => {
-            tarefa.classList.toggle('completed')
+    tarefas.forEach(elemento => {
+        elemento.addEventListener('click', () => {
+            elemento.classList.toggle('completed')
         })
-    }
+    })
 };
-
-tarefaCompleta();
 
 
 

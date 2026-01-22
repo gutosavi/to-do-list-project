@@ -86,7 +86,6 @@ section#results .btn-apagar{
     width: 40px;
     align-content: center;
     border-radius: 4px;
-    
 }
 
 section#results{
@@ -132,6 +131,7 @@ li:hover{
 
 .completed{
     text-decoration: line-through;
+    text-decoration-skip-ink: auto;
     color: gray;
 }
 
